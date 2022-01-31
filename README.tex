@@ -1,0 +1,128 @@
+\documentclass[10pt]{article}
+
+    \usepackage[breakable]{tcolorbox}
+    \usepackage{hyperref}
+    \usepackage{longtable}
+    \usepackage{booktabs}
+    \usepackage{ulem}
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \hypersetup{colorlinks=true, urlcolor=urlcolor}
+      
+\begin{document}
+    
+    \title{CS231n Lecture Notes}
+    \author{Dongha Kim}
+    \date{}
+    \maketitle
+    
+    \hypertarget{cs231n-convolutional-neural-networks-for-visual-recognition}{%
+\section*{\texorpdfstring{\href{http://cs231n.stanford.edu}{CS231n:
+Convolutional Neural Networks for Visual
+Recognition}}{CS231n: Convolutional Neural Networks for Visual Recognition}}\label{cs231n-convolutional-neural-networks-for-visual-recognition}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright
+Week\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
+Lecture\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 1\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2001\%20Introduction\%20to\%20CNN.pdf}{Introduction
+to Convolutional Neural Networks}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 2\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2002\%20Image\%20Classification.pdf}{Image
+Classification}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 3\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2003\%20Loss\%20Function\%20and\%20Optimization.pdf}{Loss
+Functions and Optimization}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 4\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2004\%20Backpropagation\%20and\%20Neural\%20Networks.pdf}{Introduction
+to Neural Networks}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 5\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2005\%20CNN.pdf}{Convolutional
+Neural Networks}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 6\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2006\%20Training\%20Neural\%20Networks\%201.pdf}{Training
+Neural Networks I}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 7\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2007\%20Training\%20Neural\%20Networks\%202.pdf}{Training
+Neural Networks II}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 8\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2008\%20DL\%20Software.pdf}{Deep
+Learning Software}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 9\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+CNN Architectures*\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 10\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2010\%20RNN.pdf}{Recurrent
+Neural Networks}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 11\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2011\%20Detection\%20and\%20Segmentation.pdf}{Detection
+and Segmentation}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 12\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\href{https://github.com/kdha0727/CS231N/blob/master/Lecture\%2012\%20Visualizing\%20and\%20Understanding.pdf}{Visualizing
+and Understanding*}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 13\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+Generative Models*\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 14\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+Deep Reinforcement Learning*\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 15\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\sout{*Guest Lecuture - Efficient Methods
+and Hardware for Deep Learning}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Week 16\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+\sout{*Guest Lecuture - Adversarial Examples
+and Adversarial Training}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+    
+\end{document}
